@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Szalone Koty</title>
+
+<style>
+body{
+    margin:0;
+    font-family: Comic Sans MS, cursive;
+    background: linear-gradient(45deg, hotpink, purple, cyan, yellow);
+    background-size: 400% 400%;
+    animation: tlo 8s infinite alternate;
+    color:white;
+    text-align:center;
+}
+
+@keyframes tlo{
+    0%{background-position:left;}
+    100%{background-position:right;}
+}
+
+h1{
+    font-size:60px;
+    text-shadow: 0 0 10px yellow, 0 0 20px red;
+    animation: skacz 1s infinite alternate;
+}
+
+@keyframes skacz{
+    from{transform:translateY(0);}
+    to{transform:translateY(-20px);}
+}
+
+.kot{
+    font-size:80px;
+    display:inline-block;
+    margin:20px;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin{
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
+}
+
+.przycisk{
+    background:lime;
+    border:none;
+    padding:20px 40px;
+    font-size:25px;
+    border-radius:20px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.przycisk:hover{
+    transform:scale(1.2) rotate(5deg);
+    background:orange;
+}
+
+.box{
+    background:rgba(0,0,0,0.4);
+    margin:40px auto;
+    padding:30px;
+    width:70%;
+    border-radius:30px;
+    box-shadow:0 0 20px white;
+}
+</style>
+
+</head>
+<body>
+
+<h1>🐱 SZALONE KOTY 🐱</h1>
+
+<div class="kot">🐈</div>
+<div class="kot">🐈‍⬛</div>
+<div class="kot">😺</div>
+<div class="kot">😸</div>
+
+<div class="box">
+<h2>Dlaczego koty są najlepsze?</h2>
+
+<p>
+✔ Śpią 16 godzin dziennie<br>
+✔ Czasem biegają o 3 w nocy jak rakieta 🚀<br>
+✔ Zrzucają rzeczy ze stołu dla nauki fizyki<br>
+✔ Rządzą całym internetem
+</p>
+
+<button class="przycisk" onclick="alert('MIAU!!! 🐱')">
+Kliknij jeśli kochasz koty
+</button>
+</div>
+
+<div class="box">
+<h2>Poziom kota</h2>
+<p>Mały kot 🐱</p>
+<p>Średni kot 🐈</p>
+<p>Boss kot 😼</p>
+</div>
+
+<footer style="margin-top:50px;font-size:20px;">
+Strona stworzona przez Miłośnika Kotów 😺
+</footer>
+
+</body>
+</html>
