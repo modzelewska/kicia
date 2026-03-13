@@ -2,107 +2,88 @@
 <html lang="pl">
 <head>
 <meta charset="UTF-8">
-<title>Szalone Koty</title>
+<title>Koty</title>
 
 <style>
 body{
     margin:0;
-    font-family: Comic Sans MS, cursive;
-    background: linear-gradient(45deg, hotpink, purple, cyan, yellow);
-    background-size: 400% 400%;
-    animation: tlo 8s infinite alternate;
-    color:white;
+    font-family: "Century Gothic", CenturyGothic, Arial, sans-serif;
+    background-color:#f6c6d3; /* jasny pudrowy róż */
+    color:#333;
     text-align:center;
 }
 
-@keyframes tlo{
-    0%{background-position:left;}
-    100%{background-position:right;}
-}
-
 h1{
+    font-size:50px;
+    margin-top:40px;
+}
+
+h2{
+    margin-top:30px;
+}
+
+.container{
+    width:70%;
+    margin:auto;
+    padding:30px;
+}
+
+.koty{
     font-size:60px;
-    text-shadow: 0 0 10px yellow, 0 0 20px red;
-    animation: skacz 1s infinite alternate;
-}
-
-@keyframes skacz{
-    from{transform:translateY(0);}
-    to{transform:translateY(-20px);}
-}
-
-.kot{
-    font-size:80px;
-    display:inline-block;
     margin:20px;
-    animation: spin 3s linear infinite;
-}
-
-@keyframes spin{
-    from{transform:rotate(0deg);}
-    to{transform:rotate(360deg);}
-}
-
-.przycisk{
-    background:lime;
-    border:none;
-    padding:20px 40px;
-    font-size:25px;
-    border-radius:20px;
-    cursor:pointer;
-    transition:0.3s;
-}
-
-.przycisk:hover{
-    transform:scale(1.2) rotate(5deg);
-    background:orange;
 }
 
 .box{
-    background:rgba(0,0,0,0.4);
-    margin:40px auto;
-    padding:30px;
-    width:70%;
-    border-radius:30px;
-    box-shadow:0 0 20px white;
+    background:rgba(255,255,255,0.5);
+    padding:25px;
+    margin:30px auto;
+    border-radius:20px;
+}
+
+button{
+    font-family:"Century Gothic", CenturyGothic, Arial, sans-serif;
+    padding:15px 30px;
+    font-size:20px;
+    border:none;
+    border-radius:15px;
+    cursor:pointer;
+    background:white;
+}
+
+button:hover{
+    background:#ffe4ec;
 }
 </style>
 
 </head>
+
 <body>
 
-<h1>🐱 SZALONE KOTY 🐱</h1>
+<h1>🐱 Strona o Kotach</h1>
 
-<div class="kot">🐈</div>
-<div class="kot">🐈‍⬛</div>
-<div class="kot">😺</div>
-<div class="kot">😸</div>
+<div class="container">
+
+<div class="koty">
+🐈 🐈‍⬛ 😺 😸
+</div>
 
 <div class="box">
-<h2>Dlaczego koty są najlepsze?</h2>
-
+<h2>Dlaczego koty są świetne?</h2>
 <p>
-✔ Śpią 16 godzin dziennie<br>
-✔ Czasem biegają o 3 w nocy jak rakieta 🚀<br>
-✔ Zrzucają rzeczy ze stołu dla nauki fizyki<br>
-✔ Rządzą całym internetem
+• są miękkie i puchate<br>
+• lubią spać cały dzień<br>
+• czasem biegają po domu bez powodu
 </p>
-
-<button class="przycisk" onclick="alert('MIAU!!! 🐱')">
-Kliknij jeśli kochasz koty
-</button>
 </div>
 
 <div class="box">
-<h2>Poziom kota</h2>
-<p>Mały kot 🐱</p>
-<p>Średni kot 🐈</p>
-<p>Boss kot 😼</p>
+<h2>Ciekawostka</h2>
+<p>Koty potrafią skoczyć nawet kilka razy wyżej niż ich własna wysokość!</p>
 </div>
 
-<footer style="margin-top:50px;font-size:20px;">
-Strona stworzona przez Miłośnika Kotów 😺
-</footer>
+<button onclick="alert('Miau! 🐱')">Kliknij kota</button>
+
+</div>
 
 </body>
 </html>
